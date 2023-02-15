@@ -1,0 +1,36 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    
+    background: #FFF;
+    color: #000;
+
+    position: relative;
+}
+
+/* Стили для отступов */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:active, :hover, :focus
+{
+    outline: 0;
+    outline-offset: 0;
+}
+
+
+header
+{
+    width: 100%;
+    background: #1b1b1b;
+}
+header > span
+{
+    font-size: 30px;
+    background: #FFF;
+    font-weight: 600;
+}
