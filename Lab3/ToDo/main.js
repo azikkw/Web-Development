@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const input = document.querySelector('.text_area');
 const saveBtn = document.querySelector('.save_goal');
 
@@ -117,7 +116,7 @@ trash.addEventListener('click', (e) => {
         trashNoEmpty.classList.remove('show');
     }
 });
-=======
+
 const input = document.querySelector('.text_area');
 const saveBtn = document.querySelector('.save_goal');
 
