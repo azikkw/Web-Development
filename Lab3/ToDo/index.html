@@ -22,6 +22,11 @@
     
     <header>
         <span>To Do List</span>
+        <div class="trash_open_back">
+            <img class="trash_open" src="trash.svg" alt="">
+            <div class="no_empty">+1</div>
+            <div class="its_empty">Trash is empty !</div>
+        </div>
     </header>
 
     <section>
@@ -32,8 +37,23 @@
             </button>
             <div class="error">To save, first fill in the field !</div>
         </div>
-        <div class="seperator"></div>
         <div class="to_do_list">
+            <div class="remove_all">
+                <span class="remove_all_btn">Remove all</span>
+            </div>
+            <div class="seperator"></div>
+            <div class="list_back"></div>
+        </div>
+        <div class="trash_back"></div>
+        <div class="trash">
+            <div class="trash_top">
+                <span>Trash</span>
+                <img class="trash_close" src="close.svg" alt="">
+            </div>
+            <div class="trash_list"></div>
+            <div class="trash_bottom">
+                <span class="clear_all">Remove all</span>
+            </div>
         </div>
     </section>
 
