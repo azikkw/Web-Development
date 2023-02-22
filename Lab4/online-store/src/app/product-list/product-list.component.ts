@@ -17,6 +17,18 @@ export class ProductListComponent {
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
+
+  stars(num: number, check: boolean): string  {
+    var text = "";
+    for (let i = 0; i < num; i++) {
+        if(check){
+            text += '⭐️';
+        } else {
+            text += '☆'
+        }
+    }
+    return text;
+  }
 }
 
 
