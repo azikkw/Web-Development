@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { products } from '../products';
 
@@ -8,27 +8,9 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = products;
-
-  share(product: {kaspi: string}) {
-    window.open('https://telegram.me/share/url?url=' + product.kaspi)
-  }
+  @Input() category: string | undefined
   
-  onNotify() {
-    window.alert('You will be notified when the product goes on sale');
-  }
-
-  stars(num: number, check: boolean): string  {
-    var text = "";
-    for (let i = 0; i < num; i++) {
-        if(check){
-            text += '⭐️';
-        } else {
-            text += '☆'
-        }
-    }
-    return text;
-  }
+  products = products;
 }
 
 

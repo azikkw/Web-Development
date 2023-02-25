@@ -1,4 +1,17 @@
-
+a h1 
+{
+    font-weight: 600;
+    font-size: 30px;
+}
+.cart
+{
+    cursor: pointer;
+}
+.cart i
+{
+    color: #fff;
+    font-size: 25px;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

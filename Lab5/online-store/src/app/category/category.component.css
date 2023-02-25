@@ -1,0 +1,22 @@
+.container
+{
+    font-family: 'Montserrat', sans-serif;
+}
+.category_btn
+{
+    margin-right: 20px;
+    padding: 15px 25px;
+    
+    font-size: 16px;
+    font-weight: 500;
+    
+    color: #fff;
+    background: rgb(255, 41, 41);
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+.category_btn:last-child
+{
+    margin-right: 0;
+}
