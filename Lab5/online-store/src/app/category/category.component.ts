@@ -14,6 +14,9 @@ export class CategoryComponent {
   currentCategory : string | undefined
 
   show(category: string) {
+    this.product.forEach(e => {
+      e.description = (e.description.length < 245) ? e.description : e.description.substring(0, 220) + ' ...';
+    });
     if(category == 'All categories') {
       this.product.forEach(e => {
           this.currentCategory = e.category;

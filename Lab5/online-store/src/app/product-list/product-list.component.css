@@ -1,34 +1,12 @@
-.item_prod
+div
 {
-    width: 450px;
-    margin: 0 60px 50px 0;
-    display: inline-table;
+    display: inline-flex;
 }
-.item_prod:last-child
+.product-item
 {
-    margin-right: 0;
-}
-.buttons_item
-{
-    display: flex;
-    align-items: center;
-    height: 30px;
-}
-.buttons_item button
-{
-    margin-right: 10px;
-}
-.rating
-{
-    display: flex;
-    align-items: center;
-    margin: -15px 0 5px;
-}
-.stars
-{
-    display: flex;
-    align-items: center;
-    margin: -2px 0 0 30px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    width: 430px;
 }
 /*
 Copyright Google LLC. All Rights Reserved.

@@ -1,28 +1,30 @@
-<div *ngIf="product != undefined">
+<div *ngIf="product != undefined" class="item_prod">
+    <img src="{{product.img}}" alt="">
     <h3>
         <a href="{{product.kaspi}}">
             {{product.name}}
         </a>
     </h3>
-    <img src="{{product.img}}" alt="">
     <p *ngIf="product.description">
-        Description: {{ product.description }}
+        <strong style="font-weight: 500;">Description:</strong> {{ product.description }}
     </p>
     <div class="rating">
-        <p *ngIf="product.price">
-            Price: {{product.price}} ₸
-        </p>
-        <div style="font-size: 14px;"  class="stars">
-            Rating: {{stars(product.rating, true)}}<div style="font-size: 21px; outline: none; margin-top: -2.1px;">{{stars(5-product.rating, false)}}</div>
+        <span *ngIf="product.price">
+            <strong style="font-weight: 500;">Price:</strong> {{product.price}} ₸
+        </span>
+        <div style="font-size: 15px;" class="stars">
+            <strong style="font-weight: 500;">Rating:</strong> {{stars(product.rating, true)}}<div style="font-size: 21px; outline: none; margin-top: -1.5px;">{{stars(5 - product.rating, false)}}</div>
         </div>
     </div>
-    <div class="buttons_item">
-        <button type="button" (click)="share(product)">
-            Share
-        </button>
-        <app-product-alerts
-            [product]="product"
-            (notify)="onNotify()">
-        </app-product-alerts>
+    <div class="bottom">
+        <div class="buttons_item">
+            <button type="button" (click)="share(product)" class="btns">Share</button>
+            <app-product-alerts [product]="product" (notify)="onNotify()" class="btns"></app-product-alerts>
+        </div>
+        <div class="likes">
+            <i class="material-icons likes_btn" on-click="decrease(product)">remove</i>
+            {{product.likes}}
+            <i class="material-icons likes_btn" on-click="increase(product)">add</i>
+        </div>
     </div>
 </div>

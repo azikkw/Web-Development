@@ -8,7 +8,6 @@ import { Product } from '../products';
 })
 export class ProductItemComponent {
   @Input() product: Product | undefined;
-  
 
   share(product: {kaspi: string}): void {
     window.open('https://telegram.me/share/url?url=' + product.kaspi)
@@ -16,6 +15,7 @@ export class ProductItemComponent {
   
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
+    console.log(this.product?.description.length);
   }
 
   stars(num: number, check: boolean): string  {
@@ -29,4 +29,12 @@ export class ProductItemComponent {
     }
     return text;
   }
+
+  increase(product: {likes: number}) {
+    product.likes += 1;
+  }
+  decrease(product: {likes: number}) {
+    product.likes -= 1;
+  }
+
 }

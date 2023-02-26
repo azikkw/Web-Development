@@ -8,6 +8,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+::-webkit-scrollbar-track
+{
+    background: #E9E9E9;
+}
+::-webkit-scrollbar-thumb
+{
+    background: rgb(255, 41, 41);
+    border-radius: 1.5px;
+}
+
 *
 {
   margin: 0;
@@ -19,28 +33,20 @@ body {
   margin: 0;
 }
 
+app-root
+{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 router-outlet + *  {
   padding: 0 16px;
 }
 
 /* Text */
-
-h1 {
-  font-size: 32px;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 20px;
-}
-
-h1, h2 {
-  font-weight: lighter;
-}
-
-p {
-  font-size: 14px;
-}
 
 /* Hyperlink */
 
@@ -73,6 +79,7 @@ button
   outline: none;
   border: none;
   background: none;
+  cursor: pointer;
 }
 /* .button, button {
   display: inline-flex;
@@ -88,7 +95,7 @@ button
 
 /* Fancy Button */
 
-.fancy-button {
+/* .fancy-button {
   background-color: white;
   color: #1976d2;
 }
@@ -100,14 +107,14 @@ button
 
 /* Top Bar */
 
-app-top-bar h1 {
+/* app-top-bar h1 {
   color: white;
   margin: 0;
 }
 
 /* Checkout Cart, Shipping Prices */
 
-.cart-item, .shipping-item {
+/* .cart-item, .shipping-item {
   width: 100%;
   min-width: 400px;
   max-width: 450px;
@@ -118,7 +125,7 @@ app-top-bar h1 {
   margin-bottom: 8px;
   border-radius: 2px;
   background-color: #EEEEEE;
-}
+} */
 
 
 /*

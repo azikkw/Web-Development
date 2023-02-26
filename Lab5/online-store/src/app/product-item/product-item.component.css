@@ -1,0 +1,94 @@
+.item_prod
+{
+    width: 430px;
+    margin: 0 100px 60px 0;
+}
+.item_prod img
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+.item_prod h3
+{
+    width: 100%;
+    font-weight: 600;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.item_prod:last-child
+{
+    margin-right: 0;
+}
+.item_prod p
+{
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.rating
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.rating span
+{
+    font-size: 15px;
+}
+.stars
+{
+    display: flex;
+    align-items: center;
+    margin: -2px 0 0 30px;
+}
+.bottom
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons_item
+{
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.buttons_item button
+{
+    margin-right: 10px;
+    background: rgb(255, 41, 41);
+}
+.btns
+{
+    padding: 10px 25px;
+    background: #eaeaea;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.likes
+{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.likes_btn
+{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+}
+.likes_btn:first-child
+{
+    margin-right: 6px;
+}
+.likes_btn:last-child
+{
+    margin-left: 6px;
+    color: rgb(255, 41, 41);
+}
