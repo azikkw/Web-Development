@@ -200,10 +200,10 @@ export const products = [
   },
   {
     id: 18,
-    name: 'Sony WH-CH510 черный',
+    name: 'Sony WH-CH510 синий',
     price: 30794,
     description: 'С беспроводными легкими наушниками WH-CH510, которые могут достаточно долго работать от аккумулятора, можно наслаждаться прослушиванием музыки весь день напролет. Эти легкие наушники имеют поворотные чашки, поэтому их удобно перевозить в сумке. А благодаря мягким амбушюрам и тонкой регулируемой головной стяжке они не только комфортные, но еще и отлично выглядят.',
-    img: 'https://resources.cdn-kaspi.kz/img/m/p/h2f/h99/63791036366878.jpg?format=preview-medium',
+    img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h63/h22/50174042832926/sony-whch510l-e-sinij-100040045-1-Container.jpg',
     kaspi: 'https://resources.cdn-kaspi.kz/img/m/p/h2f/h99/63791036366878.jpg?format=preview-medium',
     rating: 5,
     category: 'headphones',
