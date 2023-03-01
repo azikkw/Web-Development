@@ -1,5 +1,5 @@
 <div *ngFor="let product of products">
-    <app-product-item [product]="product" class="product-item"></app-product-item>
+    <app-product-item *ngIf="product.category == category" [product]=product class="product-item"></app-product-item>
 </div>
 
 <!-- 

@@ -1,9 +1,11 @@
 <div class="container">
-    <button class="category_btn" *ngFor="let category of categories" (click)="show(category.name)">
-        {{category.name}}
-    </button>
+    <div class="category_buttons" *ngFor="let category of categories">
+        <button class="category_btn" type="button" (click)="Show(category.name)">
+            {{category.name}}
+        </button>
+    </div>
 </div>
 
-<div class="category_items" *ngIf="currentCategory != undefined">
+<div *ngIf="currentCategory != undefined" class="category_items">
     <app-product-list [category]="currentCategory"></app-product-list>
 </div>

@@ -7,6 +7,7 @@ export interface Product {
   kaspi: string;
   rating: number;
   category: string;
+  allCategory: string;
   likes: number;
 }
 
@@ -19,7 +20,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/hda/ha0/62948782342174/apple-iphone-14-pro-max-128gb-fioletovyj-106363345-1.jpg',
     kaspi: 'https://kaspi.kz/shop/p/apple-iphone-14-pro-max-1tb-fioletovyi-106363345/?c=750000000',
     rating: 3,
-    category: 'smartphone',
+    category: 'Smartphone',
+    allCategory: "All categories",
     likes: 204
   },
   {
@@ -30,18 +32,20 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h37/hd2/51918241038366/apple-macbook-pro-13-mneh3-seryi-105514238-1.jpg',
     kaspi: 'https://kaspi.kz/shop/p/apple-macbook-pro-13-mneh3-seryi-105514238/?c=750000000#!/item',
     rating: 5,
-    category: 'laptop',
+    category: 'Laptop',
+    allCategory: "All categories",
     likes: 57
   },
   {
     id: 3,
     name: 'Apple AirPods Max розовый',
     price: 369990,
-    description: 'The Apple AirPods Max Bluetooth headset will be able to completely change your idea of full-size headphones. This model has been developed using first-class materials and advanced technologies. It is based on the Apple H1 processor and proprietary dynamic drivers, among the advantages of which high operating parameters can be noted.',
+    description: 'The Apple AirPods Max Bluetooth headset will be able to completely change your idea of full-size Headphones. This model has been developed using first-class materials and advanced technologies. It is based on the Apple H1 processor and proprietary dynamic drivers, among the advantages of which high operating parameters can be noted.',
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h3d/he5/33881190039582/apple-airpods-max-rozovyj-101161561-1-Container.jpg',
     kaspi: 'https://kaspi.kz/shop/p/apple-airpods-max-rozovyi-101161561/?c=750000000#!/item',
     rating: 4,
-    category: 'headphones',
+    category: 'Headphones',
+    allCategory: "All categories",
     likes: 51
   },
   {
@@ -52,7 +56,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h4f/h4b/46392661671966/apple-iphone-13-128gb-sinij-102298364-1-Container.jpg',
     kaspi: 'https://kaspi.kz/shop/p/apple-iphone-13-128gb-sinii-102298364/?c=750000000#!/item',
     rating: 5,
-    category: 'smartphone',
+    category: 'Smartphone',
+    allCategory: "All categories",
     likes: 191
   },
   {
@@ -63,7 +68,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/img/m/p/h20/h21/64344048762910.jpg?format=preview-medium',
     kaspi: 'https://kaspi.kz/shop/p/marshall-major-iv-chernyi-102138144/?c=750000000',
     rating: 4,
-    category: 'headphones',
+    category: 'Headphones',
+    allCategory: "All categories",
     likes: 37
   },
   {
@@ -74,7 +80,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/img/m/p/h5f/h3d/63819285757982.jpg?format=preview-medium',
     kaspi: 'https://kaspi.kz/shop/p/lenovo-legion-5-17ach6-82k000acrk-temno-sinii-107130212/?c=750000000',
     rating: 5,
-    category: 'laptop',
+    category: 'Laptop',
+    allCategory: "All categories",
     likes: 61
   },
   {
@@ -85,7 +92,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h26/hce/50784184336414/delonghi-cgh1130dp-104879802-1.jpg',
     kaspi: 'https://kaspi.kz/shop/p/elektrogril-delonghi-cgh1130dp-104879802/?c=750000000',
     rating: 4,
-    category: 'appliances',
+    category: 'Appliances',
+    allCategory: "All categories",
     likes: 39
   },
   {
@@ -96,7 +104,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/hb7/hbe/49487585247262/hansa-fccx-680009-silver-2601800-1-Container.jpg',
     kaspi: 'https://kaspi.kz/shop/p/hansa-fccx-680009-serebristyi-2601800/?c=750000000',
     rating: 5,
-    category: 'appliances',
+    category: 'Appliances',
+    allCategory: "All categories",
     likes: 47
   },
   {
@@ -107,7 +116,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h9b/h1b/67236399120414/acer-nitro-5-an515-57-nh-qeker-004-chernyi-108194028-1.jpg',
     kaspi: 'https://kaspi.kz/shop/p/acer-nitro-5-an515-57-nh-qeker-004-chernyi-108194028/?c=750000000#!/item',
     rating: 5,
-    category: 'laptop',
+    category: 'Laptop',
+    allCategory: "All categories",
     likes: 146
   },
   {
@@ -118,7 +128,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/img/m/p/h9b/h9e/68538744602654.jpg?format=preview-medium',
     kaspi: 'https://kaspi.kz/shop/p/samsung-galaxy-s23-ultra-5g-12-gb-512-gb-zelenyi-podarok-108714425/?c=750000000#!/item',
     rating: 5,
-    category: 'smartphone',
+    category: 'Smartphone',
+    allCategory: "All categories",
     likes: 103
   },
   {
@@ -129,7 +140,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/img/m/p/hd6/he5/66102705913886.jpg?format=preview-medium',
     kaspi: 'https://kaspi.kz/shop/p/hp-victus-16-e0008ur-489h1ea-temno-seryi-107706136/?c=750000000',
     rating: 5,
-    category: 'laptop',
+    category: 'Laptop',
+    allCategory: "All categories",
     likes: 41
   },
   {
@@ -140,7 +152,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h39/hbd/62281477128222/apple-airpods-pro-2nd-generation-belyj-106362968-1.jpg',
     kaspi: 'https://kaspi.kz/shop/p/apple-airpods-pro-2nd-generation-belyi-106362968/?c=750000000',
     rating: 5,
-    category: 'headphones',
+    category: 'Headphones',
+    allCategory: "All categories",
     likes: 278
   },
   {
@@ -151,7 +164,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h59/hd8/50455778066462/orro-reno7-8-128gb-oranzevyj-104705825-1.jpg',
     kaspi: 'https://kaspi.kz/shop/p/oppo-reno-7-8-gb-128-gb-oranzhevyi-104705825/?c=750000000#!/item',
     rating: 4,
-    category: 'smartphone',
+    category: 'Smartphone',
+    allCategory: "All categories",
     likes: 172
   },
   {
@@ -162,7 +176,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h96/ha3/62957129400350/noutbuk-apple-macbook-air-13-6-a2681-m2-chip-16gb-ssd-256gb-midnight-ios-z160000kq-106722638-1.jpg',
     kaspi: 'https://kaspi.kz/shop/p/apple-macbook-air-13-z160000kq-chernyi-106722638/?c=750000000',
     rating: 5,
-    category: 'laptop',
+    category: 'Laptop',
+    allCategory: "All categories",
     likes: 96
   },
   {
@@ -173,7 +188,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/ha3/hed/50360893898782/samsung-rb30a30n0sa-wt-seryj-101185237-1-Container.jpg',
     kaspi: 'https://kaspi.kz/shop/p/samsung-rb30a30n0sa-wt-seryi-101185237/?c=750000000',
     rating: 5,
-    category: 'appliances',
+    category: 'Appliances',
+    allCategory: "All categories",
     likes: 58
   },
   {
@@ -184,7 +200,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h94/h2d/33957523587102/jbl-tune-510bt-cernyj-101420081-1-Container.jpg',
     kaspi: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h94/h2d/33957523587102/jbl-tune-510bt-cernyj-101420081-1-Container.jpg',
     rating: 4,
-    category: 'headphones',
+    category: 'Headphones',
+    allCategory: "All categories",
     likes: 128
   },
   {
@@ -195,7 +212,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h07/h65/51534544994334/dauscher-wmd-1280ndv-dg-seryi-103536142-1.jpg',
     kaspi: 'https://kaspi.kz/shop/p/dauscher-wmd-1280ndv-dg-seryi-103536142/?c=750000000',
     rating: 4,
-    category: 'appliances',
+    category: 'Appliances',
+    allCategory: "All categories",
     likes: 51
   },
   {
@@ -206,7 +224,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h63/h22/50174042832926/sony-whch510l-e-sinij-100040045-1-Container.jpg',
     kaspi: 'https://resources.cdn-kaspi.kz/img/m/p/h2f/h99/63791036366878.jpg?format=preview-medium',
     rating: 5,
-    category: 'headphones',
+    category: 'Headphones',
+    allCategory: "All categories",
     likes: 69
   },
   {
@@ -217,7 +236,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/h26/h48/49613711835166/samsung-galaxy-a13-4-gb-128-gb-chernyi-104253279-1.jpg',
     kaspi: 'https://kaspi.kz/shop/p/samsung-galaxy-a13-4-gb-128-gb-chernyi-104253279/?c=750000000',
     rating: 3,
-    category: 'smartphone',
+    category: 'Smartphone',
+    allCategory: "All categories",
     likes: 85
   },
   {
@@ -228,7 +248,8 @@ export const products = [
     img: 'https://resources.cdn-kaspi.kz/medias/sys_master/images/images/hd7/h1c/31671047880734/atlantic-asafa-12hrn1-s-serebristyj-montaznyj-komplekt-4201112-1-Container.jpg',
     kaspi: 'https://kaspi.kz/shop/p/atlantic-asafa-12hrn8-s-montazhnyi-komplekt-4201112/?c=750000000',
     rating: 5,
-    category: 'appliances',
+    category: 'Appliances',
+    allCategory: "All categories",
     likes: 30
   }
 ];

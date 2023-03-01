@@ -1,4 +1,4 @@
-export interface Categy {
+export interface Category {
   id: number;
   name: string;
 }
@@ -6,23 +6,18 @@ export interface Categy {
 export const categories = [
   {
     id: 1,
-    name: 'All categories',
-    color: ''
-  },
-  {
-    id: 2,
     name: 'Smartphone'
   },
   {
-    id: 3,
+    id: 2,
     name: 'Laptop'
   },
   {
-    id: 4,
+    id: 3,
     name: 'Headphones'
   },
   {
-    id: 5,
+    id: 4,
     name: 'Appliances'
   }
 ];
