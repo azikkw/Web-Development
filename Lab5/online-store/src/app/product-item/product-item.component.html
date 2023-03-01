@@ -1,4 +1,8 @@
 <div *ngIf="product != undefined" class="item_prod">
+    <div class="for_delete">
+        {{product.category}}
+        <i class="material-icons" (click)="remove(product.id)">close</i>
+    </div>
     <img src="{{product.img}}" alt="">
     <h3>
         <a href="{{product.kaspi}}">
@@ -22,9 +26,9 @@
             <app-product-alerts [product]="product" (notify)="onNotify()" class="btns"></app-product-alerts>
         </div>
         <div class="likes">
-            <i class="material-icons likes_btn" on-click="decrease(product)">remove</i>
-            {{product.likes}}
-            <i class="material-icons likes_btn" on-click="increase(product)">add</i>
+            <i class="material-icons likes_btn" (click)="decrease(product)">remove</i>
+            <div class="likes_number">{{product.likes}}</div>
+            <i class="material-icons likes_btn" (click)="increase(product)">add</i>
         </div>
     </div>
 </div>

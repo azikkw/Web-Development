@@ -3,6 +3,26 @@
     width: 430px;
     margin: 0 100px 60px 0;
 }
+.for_delete
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.for_delete i
+{
+    font-size: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+.for_delete i:hover
+{
+    color: rgb(255, 41, 41);
+}
 .item_prod img
 {
     position: relative;
@@ -69,6 +89,7 @@
     color: #fff;
     font-weight: 500;
     border-radius: 5px;
+    cursor: pointer;
 }
 .likes
 {

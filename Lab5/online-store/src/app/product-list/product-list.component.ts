@@ -11,9 +11,8 @@ export class ProductListComponent {
   @Input() category: string | undefined
   products = products;
 
-  remove(removeID: number){
-    this.products = this.products.filter( (x) =>x.id !== removeID)
-    console.log(this.products)
+  remove(id: number){
+    this.products = this.products.filter((x) => x.id !== id)
   }
 }
 

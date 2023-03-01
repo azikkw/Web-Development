@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Product } from '../products';
 
 @Component({
@@ -8,6 +8,9 @@ import { Product } from '../products';
 })
 export class ProductItemComponent {
   @Input() product: Product | undefined;
+  @Output() forRemove = new EventEmitter();
+
+  status : boolean = false
 
   share(product: {kaspi: string}): void {
     window.open('https://telegram.me/share/url?url=' + product.kaspi)
@@ -29,12 +32,21 @@ export class ProductItemComponent {
     }
     return text;
   }
-
+  
+  cnt : number = 0
   increase(product: {likes: number}) {
-    product.likes += 1;
+    if(this.cnt != 1) {
+      product.likes++; this.cnt++;
+    }
   }
   decrease(product: {likes: number}) {
-    product.likes -= 1;
+    if(this.cnt != 0) {
+      product.likes--; this.cnt--;
+    }
+  }
+
+  remove(id: number){
+    this.forRemove.emit(id)
   }
 
 }
