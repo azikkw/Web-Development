@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+body
+{
+    color: #000;
+    background: #fff;
+
+    font-size: 16px;
+}
+
+* {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+:hover, :focus, :active
+{
+    outline: 0;
+    outline-offset: 0;
+}
+
+.app-root
+{
+    width: 100%;
+    height: 100vh;
+}
