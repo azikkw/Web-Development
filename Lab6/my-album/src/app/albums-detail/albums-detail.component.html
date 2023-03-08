@@ -1,1 +1,24 @@
-<p>albums-detail works!</p>
+<div class="container">
+    <a routerLink="/home-component" class="return_back">
+        <i class="material-icons">chevron_left</i>
+        Return back
+    </a>
+    <div class="album-detail">
+        <div class="album_id">
+            {{album.id}}
+            <div class="id_title">Album ID</div>
+        </div>
+        <div class="album_details">
+            <span><strong style="font-weight: 500; font-size: 19px;">User ID:</strong> {{album.userId}}</span>
+            <span><strong style="font-weight: 500; font-size: 19px;">Title:</strong> {{album.title}}</span>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <a routerLink="/albums-component/{{album.id}}/photos" class="album_photos" style="margin: 3px 16px 3px 0">View photos</a>
+        <div class="update_title" style="margin: 3px 0">
+            <input type="text" [(ngModel)]="updatedAlbum.title" value="{{album.title}}">
+            <button (click)="updateTitle(album.id)">Update title</button>
+        </div>
+    </div>
+</div>

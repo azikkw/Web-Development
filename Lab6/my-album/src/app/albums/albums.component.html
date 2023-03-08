@@ -1,10 +1,16 @@
 <div class="container">
     <div class="title">Albums list</div>
-    <ul *ngFor="let album of albums">
-        <li>
-            Id: {{album.id}}
-            UserId: {{album.userId}}
-            Title: {{album.title}}
-        </li>
-    </ul>
+    <div class="albums_container">
+        <div *ngFor="let album of albums" class="album_item">
+            <div class="album_top">
+                {{album.id}}
+                <i class="material-icons" (click)="removeAlbum(album.id)">close</i>
+            </div>
+            <div class="album_details">
+                <span>User ID: {{album.userId}}</span>
+                <span>Title: {{album.title}}</span>
+            </div>
+            <a routerLink="/albums-component/{{album.id}}" class="album_open">Open album</a>
+        </div>
+    </div>
 </div>

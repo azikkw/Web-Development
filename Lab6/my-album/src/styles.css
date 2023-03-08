@@ -14,3 +14,17 @@ body
 a {
     text-decoration: none;
 }
+
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+::-webkit-scrollbar-track
+{
+    background: #E9E9E9;
+}
+::-webkit-scrollbar-thumb
+{
+    background: rgb(14, 95, 246);
+    border-radius: 1.5px;
+}

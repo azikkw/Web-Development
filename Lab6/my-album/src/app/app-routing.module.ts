@@ -11,8 +11,8 @@ const routes: Routes = [
   { path: 'home-component', component: HomeComponent },
   { path: 'about-component', component: AboutComponent },
   { path: 'albums-component', component: AlbumsComponent },
-  { path: 'albums-detail-component', component: AlbumsDetailComponent },
-  { path: 'albums-photos-component', component: AblumsPhotosComponent },
+  { path: 'albums-component/:id', component: AlbumsDetailComponent },
+  { path: 'albums-component/:id/photos', component: AblumsPhotosComponent },
 ];
 
 @NgModule({
