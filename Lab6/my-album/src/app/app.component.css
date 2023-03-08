@@ -5,6 +5,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative;
+}
+.container::after
+{
+    content: "";
+
+    display: block;
+    width: 96%;
+
+    border-bottom: 1px solid #dbdbdb;
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
 }
 
 .logo
@@ -25,7 +41,7 @@
 .logo span
 {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 nav ul
@@ -79,10 +95,14 @@ nav ul li a:hover:after
     margin-right: 10px;
     color: #fff;
     cursor: default;
+    font-size: 18px;
+}
+.end a
+{
+    padding-left: 24px;
 }
 .material-icons.link
 {
-    padding: 12px;
     color: #000;
     transition: .8s;
 }
