@@ -1,4 +1,10 @@
 <div class="container">
+    <div class="add_album">
+        <span>New album</span>
+        <input type="text" [(ngModel)]="newAlbum.userId" placeholder="Enter User ID">
+        <input type="text" [(ngModel)]="newAlbum.title" placeholder="Add title to your album" class="input_title">
+        <button (click)="addAlbum()">Add</button>
+    </div>
     <div class="title">Albums list</div>
     <div class="albums_container">
         <div *ngFor="let album of albums" class="album_item">

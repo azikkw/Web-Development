@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { AlbumsDetailComponent } from './albums-detail/albums-detail.component';
 import { AblumsPhotosComponent } from './ablums-photos/ablums-photos.component';
+import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AblumsPhotosComponent } from './ablums-photos/ablums-photos.component';
     AboutComponent,
     AlbumsComponent,
     AlbumsDetailComponent,
-    AblumsPhotosComponent
+    AblumsPhotosComponent,
+    BottomBarComponent
   ],
   imports: [
     BrowserModule,

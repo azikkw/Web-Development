@@ -1,23 +1,25 @@
 <div class="container">
 
-  <div class="logo">
-    <i class="material-icons">burst_mode</i>
-    <span>My Gallery</span>
+  <div class="top">
+    <a routerLink="/home-component" class="logo">
+      <i class="material-icons">burst_mode</i>
+      <span>My Gallery</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a routerLink="/home-component">Home</a></li>
+        <li><a routerLink="/about-component">About</a></li>
+        <li><a routerLink="/albums-component">Albums</a></li>
+      </ul>
+    </nav>
+    <div class="end">
+      <span>My Gallery</span>
+      <a href="https://github.com/azikkw/Web-Development" target="_blank"><i class="material-icons link">link</i></a>
+    </div>
   </div>
-
-  <nav>
-    <ul>
-      <li><a routerLink="/home-component">Home</a></li>
-      <li><a routerLink="/about-component">About</a></li>
-      <li><a routerLink="/albums-component">Albums</a></li>
-    </ul>
-  </nav>
-
-  <div class="end">
-    <span>My Gallery</span>
-    <a href="https://github.com/azikkw/Web-Development" target="_blank"><i class="material-icons link">link</i></a>
-  </div>
+  
+  <router-outlet class="router-outlet"></router-outlet>
 
 </div>
 
-<router-outlet class="router-outlet"></router-outlet>
+<app-bottom-bar class="app-bottom-bar"></app-bottom-bar>

@@ -10,14 +10,14 @@ export class AlbumsService {
 
     getAlbums(): Observable<Album[]> {
         return this.http.get<Album[]>('https://jsonplaceholder.typicode.com/albums');
-    }   
-    
-    addAlbum(album: Album): Observable<Album>{
-        return this.http.post<Album>('https://jsonplaceholder.typicode.com/albums', album);
     }
 
     getAlbum(id: number): Observable<Album> {
         return this.http.get<Album>(`https://jsonplaceholder.typicode.com/albums/${id}`)
+    }
+    
+    addAlbum(album: Album): Observable<Album>{
+        return this.http.post<Album>('https://jsonplaceholder.typicode.com/albums', album);
     }
 
     removeAlbum(id: number): Observable<Album[]> {
