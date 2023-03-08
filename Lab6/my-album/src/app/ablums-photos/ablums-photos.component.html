@@ -1,1 +1,11 @@
-<p>ablums-photos works!</p>
+<div class="container">
+    <a (click)="returnBack()" class="return_back">
+        <i class="material-icons">chevron_left</i>
+        Return back
+    </a>
+    <div class="album_photos">
+        <div *ngFor="let photo of AlbumPhotos">
+            <img src="{{photo.url}}" alt="">
+        </div>
+    </div>
+</div>

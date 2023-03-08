@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 import { Album } from '../foralbums';
 import { AlbumsService } from '../albums.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-albums-detail',
@@ -13,7 +14,7 @@ export class AlbumsDetailComponent implements OnInit{
   album: Album;
   updatedAlbum: Album
 
-  constructor(private route: ActivatedRoute, private albumService: AlbumsService) {
+  constructor(private route: ActivatedRoute, private albumService: AlbumsService, private location: Location) {
     this.album = {} as Album
     this.updatedAlbum = {id: this.album.id, userId: this.album.userId} as Album
   }
@@ -32,4 +33,7 @@ export class AlbumsDetailComponent implements OnInit{
     })
   }
 
+  returnBack() {
+    this.location.back();
+  }
 }
