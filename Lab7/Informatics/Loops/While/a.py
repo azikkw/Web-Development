@@ -1,0 +1,5 @@
+n = int(input())
+
+for i in range(1, 15):
+    if i ** 2 <= n:
+        print(i ** 2)
