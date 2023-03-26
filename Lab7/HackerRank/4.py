@@ -1,7 +1,5 @@
 if __name__ == '__main__':
-    a = int(input())
-    b = int(input())
+    n = int(input())
     
-    print(a + b)
-    print(a - b)
-    print(a * b)
+    for i in range(0, n):
+        print(i ** 2)
