@@ -1,7 +1,7 @@
+def split_and_join(line):
+    return '-'.join(line.split())
+
 if __name__ == '__main__':
-    a = int(input())
-    b = int(input())
-    
-    print(a + b)
-    print(a - b)
-    print(a * b)
+    line = input()
+    result = split_and_join(line)
+    print(result)
