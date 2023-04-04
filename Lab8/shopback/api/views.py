@@ -16,7 +16,7 @@ def product_detail(request, id):
     for pj in products_json:
         if pj['id'] == id:
             return JsonResponse(pj)
-    return JsonResponse({'error': 'Product not found!'})
+    return JsonResponse({'Error': 'Product not found!'})
 
 
 def categories_list(request):
@@ -31,8 +31,20 @@ def category_detail(request, id):
     for cj in categories_json:
         if cj['id'] == id:
             return JsonResponse(cj)
-    return JsonResponse({'error': 'Category not found!'})
+    return JsonResponse({'Error': 'Category not found!'})
 
 
-def category_products_list(request):
-    pass
+def category_products_list(request, id):
+    categories = Category.objects.all()
+    categories_json = [c.to_json() for c in categories]
+
+    products = Product.objects.all()
+    products_json = [p.to_json() for p in products]
+
+    for cj in categories_json:
+        if cj['id'] == id:
+            for pj in products_json:
+                if pj['category'] == cj['name']:
+                    return JsonResponse(pj)
+
+    return JsonResponse({'Error': 'Products of category not found!'})
