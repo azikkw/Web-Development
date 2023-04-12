@@ -1,0 +1,47 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    
+    background: #FFF;
+    color: #000;
+
+    position: relative;
+    overflow: hidden;
+
+    height: 100vh;
+}
+
+/* Стили для отступов */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:active, :hover, :focus
+{
+    outline: 0;
+    outline-offset: 0;
+}
+
+/* Стили для скроллбара */
+::-webkit-scrollbar
+{
+    width: 4px;
+}
+::-webkit-scrollbar-track
+{
+    background: #fff;
+}
+::-webkit-scrollbar-thumb
+{
+    background: #202020;
+    border-radius: 2px;
+}
+
+.racer
+{
+    width: 100px;
+    position: relative;
+}
