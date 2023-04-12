@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Lab3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Lab3/JavaScript" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Lab3/ToDo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Lab8/shopback" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Lab9/hh_back" vcs="Git" />
   </component>
 </project>

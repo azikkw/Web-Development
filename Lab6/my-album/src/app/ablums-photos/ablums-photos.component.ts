@@ -14,7 +14,7 @@ export class AblumsPhotosComponent {
   AlbumPhotos: AlbumPhotos[];
 
   constructor(private route: ActivatedRoute, private albumService: AlbumsService, private location: Location) {
-    this.AlbumPhotos = {} as AlbumPhotos[]
+    this.AlbumPhotos = []
   }
 
   ngOnInit(): void {

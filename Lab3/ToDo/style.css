@@ -226,6 +226,20 @@ section
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 20px;
 }
+.greeteng
+{
+    width: 100%;
+
+    text-align: center;
+    font-size: 15px;
+
+    display: none;
+    padding-top: 20px;
+}
+.greeteng.show
+{
+    display: block;
+}
 .remove_all
 {
     width: 100%;

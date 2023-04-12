@@ -18,17 +18,13 @@ export class AlbumsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getAlbums();
-  }
-
-  getAlbums() {
     this.albumsService.getAlbums().subscribe( (albums) => {
       this.albums = albums;
     })
   }
 
-  addAlbum() {
-    this.albumsService.addAlbum(this.newAlbum).subscribe( (album) => {
+  createAlbum() {
+    this.albumsService.createAlbum(this.newAlbum).subscribe( (album) => {
         this.albums.push(album);
         this.newAlbum = {} as Album;
     });
