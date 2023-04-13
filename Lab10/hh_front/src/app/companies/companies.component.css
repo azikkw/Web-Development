@@ -1,0 +1,70 @@
+.title
+{
+  font-size: 24px;
+  font-weight: 600;
+
+  margin-bottom: 30px;
+}
+
+.loading
+{
+  text-align: center;
+}
+.loading img
+{
+  width: 90px;
+}
+
+.company
+{
+  background: rgb(241, 241, 241);
+  border-radius: 15px;
+
+  display: flex;
+
+  padding: 20px;
+  margin-bottom: 15px;
+
+  color: #000;
+  transition: .25s;
+}
+.company:hover
+{
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+.logo
+{
+  width: 90px;
+  height: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  margin-right: 20px;
+}
+.logo img
+{
+  width: 60%;
+}
+.info
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.name
+{
+  font-size: 19px;
+  font-weight: 600;
+
+  margin-bottom: 5px;
+}
+.location
+{
+  font-size: 14px;
+  color: #606060;
+}
