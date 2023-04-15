@@ -11,6 +11,7 @@ import { VacanciesComponent } from './vacancies/vacancies.component';
 import { VacancyDetailsComponent } from './vacancy-details/vacancy-details.component';
 import { TopTenVacanciesComponent } from './top-ten-vacancies/top-ten-vacancies.component';
 import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {HttpClientModule} from "@angular/common/http";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,8 +14,8 @@ const routes: Routes = [
   { path: 'companies/:id', component: CompanyDetailComponent },
   { path: 'companies/:id/vacancies', component: CompanyVacanciesComponent },
   { path: 'vacancies', component: VacanciesComponent },
-  { path: 'vacancies/:id', component: VacancyDetailsComponent },
   { path: 'vacancies/top-ten', component: TopTenVacanciesComponent },
+  { path: 'vacancies/:id', component: VacancyDetailsComponent },
   { path: '', redirectTo: 'vacancies/top-ten', pathMatch: 'full' }
 ];
 
