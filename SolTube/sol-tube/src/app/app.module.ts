@@ -3,15 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {FormsModule} from "@angular/forms";
+import { VideoPageComponent } from './video-page/video-page.component';
+import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ChanelComponent } from './chanel/chanel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VideoPageComponent,
+    HomeComponent,
+    ProfileComponent,
+    ChanelComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
