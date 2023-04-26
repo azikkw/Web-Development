@@ -25,21 +25,4 @@ export class HomeComponent {
     } e.composedPath()[0].classList.add("active")
   }
 
-  openMoreWindow(e: any) {
-    e.composedPath()[1].children[1].classList.toggle("open")
-  }
-
-  openShareWindow(e: any) {
-    if(e.composedPath()[0].children[1].innerHTML == "Share") {
-      e.composedPath()[6].querySelector(".share_window").classList.add("open")
-      document.body.classList.add("lock")
-      e.composedPath()[1].classList.remove("open")
-    }
-  }
-
-  closeShareWindow(e: any) {
-    e.composedPath()[3].classList.remove("open")
-    document.body.classList.remove("lock")
-  }
-
 }

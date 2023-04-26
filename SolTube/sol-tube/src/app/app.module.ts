@@ -8,6 +8,7 @@ import { VideoPageComponent } from './video-page/video-page.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ChanelComponent } from './chanel/chanel.component';
+import { VideoItemComponent } from './video-item/video-item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ChanelComponent } from './chanel/chanel.component';
     VideoPageComponent,
     HomeComponent,
     ProfileComponent,
-    ChanelComponent
+    ChanelComponent,
+    VideoItemComponent
   ],
     imports: [
         BrowserModule,

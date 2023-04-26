@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeComponent } from "./home/home.component";
+import {VideoItemComponent} from "./video-item/video-item.component";
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ export class AppComponent implements OnInit {
     const menu = e.composedPath()[2]
     menu.classList.toggle("close")
     localStorage.setItem("menu", menu.className) // @ts-ignore
+    VideoItemComponent.setMenuCondition(localStorage.getItem("menu")) // @ts-ignore
     HomeComponent.setMenuCondition(localStorage.getItem("menu"))
   }
 
